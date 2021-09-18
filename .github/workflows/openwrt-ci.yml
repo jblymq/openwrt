@@ -19,7 +19,7 @@ on:
         default: 'false'
   push:
     branches: 
-      - master
+      - main
   schedule:
     - cron: 0 20 * * *
   release:
@@ -41,7 +41,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
 
       - name: Space cleanup
         env:
